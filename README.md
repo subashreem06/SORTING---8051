@@ -18,39 +18,24 @@ To write and execute Assembly language Program for sorting of data using 8051 ke
 7.	Otherwise stop the program.
 
 **PROGRAM:**
-
+```
 ORG 0000H 
-
 MOV R7,#4
-
 LOOP1:MOV R0,#40H 
-
 MOV R6,#04
-
 LOOP: MOV A,@R0 
-
 INC R0
-
 MOV 50H,@R0 
-
 CJNE A,50H,NEXT 
-
 SJMP DOWN 
-
 NEXT:JNC DOWN 
-
 MOV @R0,A
-
 DEC R0
-
 MOV @R0,50H 
-
 DOWN:DJNZ R6,LOOP 
-
 DJNZ R7,LOOP1
-
 END
-
+```
 
 **OUTPUT:**
 
@@ -77,35 +62,20 @@ After execution: D:0x40H:
 **PROGRAM:**
 ```
 ORG 0000H 
-
 MOV R7,#4
-
 LOOP1:MOV R0,#40H
-
 MOV R6,#04
-
 LOOP: MOV A,@R0
-
 INC R0
-
 MOV 50H,@R0 
-
 CJNE A,50H,NEXT
-
 SJMP DOWN 
-
 NEXT:JC DOWN
-
 MOV @R0,A
-
 DEC R0
-
 MOV @R0,50H 
-
 DOWN:DJNZ R6,LOOP 
-
 DJNZ R7,LOOP1
-
 END
 ```
 **OUTPUT:**
