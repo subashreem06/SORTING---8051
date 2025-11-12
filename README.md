@@ -57,14 +57,10 @@ END
 **MEMORY WINDOW:**
 
 Before execution: D:0x40H:
-<BR>
-<BR>
-<BR>
-After execution: D:0x40H:
-<BR>
-<BR>
-<BR>
+![WhatsApp Image 2025-11-12 at 19 51 35_c1853f30](https://github.com/user-attachments/assets/1ca1c846-bb02-4dfa-a7d8-8f4238572085)
 
+After execution: D:0x40H:
+![WhatsApp Image 2025-11-12 at 19 51 45_301a151b](https://github.com/user-attachments/assets/b65ba2a3-88e9-4ac3-94a0-1d1262af3491)
 
 **(ii)	Ascending order**
  
@@ -79,7 +75,7 @@ After execution: D:0x40H:
 7.	Otherwise stop the program.
 
 **PROGRAM:**
-
+```
 ORG 0000H 
 
 MOV R7,#4
@@ -111,22 +107,14 @@ DOWN:DJNZ R6,LOOP
 DJNZ R7,LOOP1
 
 END
-
+```
 **OUTPUT:**
-
 **MEMORY WINDOW:** 
-
 **Before execution:**
-D:0x40H:
-<BR>
-<BR>
-<BR>
-<BR>
+<img width="951" height="270" alt="image" src="https://github.com/user-attachments/assets/88831a3f-4411-465f-96d0-1bd19aecbaa2" />
 After execution:
 D:0x40H:
-<BR>
-<BR>
-<BR>
+<img width="951" height="270" alt="image" src="https://github.com/user-attachments/assets/24e2e8fa-d597-40cc-a38c-c5e93287707b" />
 **Result:**
 
 Thus the sorting of given data was done using 8051 keil and shown the output.
